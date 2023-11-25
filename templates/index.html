@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Reporting System</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('/static/images/mat.webp'); 
+            background-size: 100%; 
+        }
+
+        header {
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 0.1em;
+
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        section {
+            padding: 2em;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style,css' %}">
+<body>
+
+    <header>
+        <h1>Crime Reporting System</h1>
+    </header>
+
+    <nav>
+        <a href="/templates/login.html">register</a>
+        <a href="/templates/contact.html">ContactUs</a>
+        <a href="/templates/about.html">About</a>
+        
+    </nav>
+
+    <section claa="col">
+        <h2 > Welcome to our Crime Reporting System</h2>
+        <p>
+            Report crimes online and contribute to a safer community. Use our platform to report incidents,
+            view crime reports, and stay informed.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Crime Reporting System</p>
+    </footer>
+
+</body>
+</html>
